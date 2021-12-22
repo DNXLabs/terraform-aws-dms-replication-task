@@ -21,18 +21,16 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| certificate\_arn | The Amazon Resource Name (ARN) for the certificate | `any` | n/a | yes |
-| database\_name | The name of the endpoint database | `any` | n/a | yes |
-| endpoint\_id | The database endpoint identifier | `any` | n/a | yes |
-| endpoint\_type | Endpoint type: `source` or `target` | `any` | n/a | yes |
-| engine\_name | The type of engine for the endpoint. Can be one of aurora \| aurora-postgresql\| azuredb \| db2 \| docdb \| dynamodb \| elasticsearch \| kafka \| kinesis \| mariadb \| mongodb \| mysql \| oracle \| postgres \| redshift \| s3 \| sqlserver \| sybase | `string` | `""` | no |
-| extra\_connection\_attributes | Additional attributes associated with the connection | `any` | n/a | yes |
-| kms\_key\_arn | KMS Key ARN to use a CMK instead of default shared key, when storage\_encrypted is true | `string` | `""` | no |
-| password | The password to be used to login to the endpoint database | `any` | n/a | yes |
-| port | The port used by the endpoint database | `any` | n/a | yes |
-| server\_name | The host name of the server | `any` | n/a | yes |
-| ssl\_mode | The SSL mode to use for the connection. Can be one of none \| require \| verify-ca \| verify-full | `string` | `"none"` | no |
-| username | The user name to be used to login to the endpoint database | `any` | n/a | yes |
+| cdc\_start\_position | Indicates when you want a change data capture (CDC) operation to start. The value can be in date, checkpoint, or LSN/SCN format depending on the source engine | `any` | `null` | no |
+| cdc\_start\_time | The Unix timestamp integer for the start of the Change Data Capture (CDC) operation | `any` | `null` | no |
+| migration\_type | The migration type. Can be one of full-load \| cdc \| full-load-and-cdc | `any` | n/a | yes |
+| replication\_instance\_arn | The Amazon Resource Name (ARN) of the replication instance | `any` | n/a | yes |
+| replication\_task\_id | The replication task identifier | `any` | n/a | yes |
+| replication\_task\_settings | An escaped JSON string that contains the task settings | `any` | n/a | yes |
+| source\_endpoint\_arn | The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint | `any` | n/a | yes |
+| table\_mappings | An escaped JSON string that contains the table mappings | `any` | n/a | yes |
+| tags | A map of tags to assign to the resource | `any` | n/a | yes |
+| target\_endpoint\_arn | The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint | `any` | n/a | yes |
 
 ## Outputs
 
