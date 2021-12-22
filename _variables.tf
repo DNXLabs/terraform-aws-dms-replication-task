@@ -32,9 +32,9 @@ variable "table_mappings" {
   description = "An escaped JSON string that contains the table mappings"
 }
 
-variable "tags" {
-  description = "A map of tags to assign to the resource"
-}
+# variable "tags" {
+#   description = "A map of tags to assign to the resource"
+# }
 
 variable "target_endpoint_arn" {
   description = "The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint"
