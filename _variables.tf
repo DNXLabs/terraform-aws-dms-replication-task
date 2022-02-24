@@ -48,3 +48,8 @@ variable "sub_enabled" {
   description = "Whether the event subscription should be enabled"
   default = false
 }
+
+variable "environment_name" {
+  type        = string
+  description = "Environment name to use as a prefix to this Endpoint"
+}
