@@ -28,9 +28,7 @@
 | replication\_instance\_arn | The Amazon Resource Name (ARN) of the replication instance | `any` | n/a | yes |
 | replication\_task\_id | The replication task identifier | `any` | n/a | yes |
 | replication\_task\_settings | An escaped JSON string that contains the task settings | `any` | n/a | yes |
-| sns\_topic\_arn | SNS topic arn to send events on | `any` | n/a | yes |
 | source\_endpoint\_arn | The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint | `any` | n/a | yes |
-| sub\_enabled | Whether the event subscription should be enabled | `bool` | `false` | no |
 | table\_mappings | An escaped JSON string that contains the table mappings | `any` | n/a | yes |
 | target\_endpoint\_arn | The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint | `any` | n/a | yes |
 
