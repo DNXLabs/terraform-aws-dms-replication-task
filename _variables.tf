@@ -40,14 +40,14 @@ variable "target_endpoint_arn" {
   description = "The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint"
 }
 
-variable "sns_topic_arn" {
-  description = "SNS topic arn to send events on"
-}
+# variable "sns_topic_arn" {
+#   description = "SNS topic arn to send events on"
+# }
 
-variable "sub_enabled" {
-  description = "Whether the event subscription should be enabled"
-  default = false
-}
+# variable "sub_enabled" {
+#   description = "Whether the event subscription should be enabled"
+#   default = false
+# }
 
 variable "environment_name" {
   type        = string

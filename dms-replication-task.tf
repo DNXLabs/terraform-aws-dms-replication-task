@@ -16,16 +16,16 @@ resource "aws_dms_replication_task" "default" {
 #   }
 }
 
-resource "aws_dms_event_subscription" "task" {
-  enabled          = var.sub_enabled
-  event_categories = ["creation", "failure"]
-  name             = "dms-events"
-  sns_topic_arn    = var.sns_topic_arn
-  source_ids       = []
-  source_type      = "replication-task"
+# resource "aws_dms_event_subscription" "task" {
+#   enabled          = var.sub_enabled
+#   event_categories = ["creation", "failure"]
+#   name             = "dms-events"
+#   sns_topic_arn    = var.sns_topic_arn
+#   source_ids       = []
+#   source_type      = "replication-task"
 
-  tags = {
-    Name = "replication task"
-  }
-}
+#   tags = {
+#     Name = "replication task"
+#   }
+# }
 
