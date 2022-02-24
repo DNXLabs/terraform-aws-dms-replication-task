@@ -23,6 +23,7 @@
 |------|-------------|------|---------|:--------:|
 | cdc\_start\_position | Indicates when you want a change data capture (CDC) operation to start. The value can be in date, checkpoint, or LSN/SCN format depending on the source engine | `any` | `null` | no |
 | cdc\_start\_time | The Unix timestamp integer for the start of the Change Data Capture (CDC) operation | `any` | `null` | no |
+| environment\_name | Environment name to use as a prefix to this Endpoint | `string` | n/a | yes |
 | migration\_type | The migration type. Can be one of full-load \| cdc \| full-load-and-cdc | `any` | n/a | yes |
 | replication\_instance\_arn | The Amazon Resource Name (ARN) of the replication instance | `any` | n/a | yes |
 | replication\_task\_id | The replication task identifier | `any` | n/a | yes |
