@@ -11,9 +11,7 @@ resource "aws_dms_replication_task" "default" {
   
   table_mappings            = var.table_mappings
 
-#   tags = {
-#     Name = ""
-#   }
+  tags                      = var.tags
 }
 
 # resource "aws_dms_event_subscription" "task" {
