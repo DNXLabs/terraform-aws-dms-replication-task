@@ -30,6 +30,7 @@
 | replication\_task\_settings | An escaped JSON string that contains the task settings | `any` | n/a | yes |
 | source\_endpoint\_arn | The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint | `any` | n/a | yes |
 | table\_mappings | An escaped JSON string that contains the table mappings | `any` | n/a | yes |
+| tags | A map of tags to assign to the resource | `any` | n/a | yes |
 | target\_endpoint\_arn | The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint | `any` | n/a | yes |
 
 ## Outputs
